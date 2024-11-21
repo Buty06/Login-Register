@@ -38,7 +38,7 @@
   </head>
 
   <body>
-    <form class="cards card1">
+    <div class="cards card1 display2 display display3" id="card1">
       <h2 class="title">Signup</h2>
       <hr class="border_button_color_title title_button_card2" />
 
@@ -53,7 +53,7 @@
       </label>
 
       <label>
-        <div class="submit_title">Create password</div>
+        <div class="submit_title generate_password">Create password</div>
         <input type="password" />
       </label>
 
@@ -65,13 +65,14 @@
       <input type="submit" value="Create Account" class="submit" />
 
       <p class="account">
-        Already have an account ? <button class="text_bold button">Login</button>
+        Already have an account ?
+        <button class="text_bold button" id="change_login">Login</button>
       </p>
 
       <p class="text_bold button">Need help ?</p>
-    </form>
+    </div>
 
-    <form class="cards card2">
+    <div class="cards card2" id="card2">
       <h2 class="title">Login</h2>
       <hr class="border_button_color_title" />
 
@@ -90,10 +91,13 @@
       <input type="submit" value="Login" class="submit" />
 
       <p class="account">
-        Don't have an account? <button class="text_bold button">Signup</button>
+        Don't have an account?
+        <button class="text_bold button" id="change_signup">Signup</button>
       </p>
 
       <p class="text_bold button">Need help?</p>
-    </form>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
