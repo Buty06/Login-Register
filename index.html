@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A login and registration practice page" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="google" content="notranslate" />
 
+    <meta property="og:title" content="Login-Register" />
+    <meta
+      property="og:description"
+      content="A login and registration practice page"
+    />
+    <meta
+      property="og:image"
+      content="https://miro.medium.com/v2/resize:fit:1400/1*iOTjvFbjAaPrG-qzTNqEaQ.png"
+    />
+    <meta property="og:image:alt" content="Example image" />
+    <title>Login-Register</title>
+
+    <style>
+      html {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <form class="cards card1">
+      <h2 class="title">Login</h2>
+
+      <label>
+        Username
+        <input type="text" />
+      </label>
+
+      <label>
+        Password
+        <input type="password" />
+      </label>
+
+      <p class="text_bold">Forgot password</p>
+
+      <input type="submit" value="Login" class="submit" />
+
+      <p>Don't have an account? <button class="text_bold">Signup</button></p>
+
+      <p class="text_bold">Need help?</p>
+    </form>
+
+    <form class="cards card2">
+      <h2 class="title">Signup</h2>
+
+      <label>
+        Username
+        <input type="text" />
+      </label>
+
+      <label>
+        Email id
+        <input type="email" />
+      </label>
+
+      <label>
+        Create password
+        <input type="password" />
+      </label>
+
+      <p>
+        By creating an account, I agree to
+        <span class="text_bold">Terms and Conditions</span>
+      </p>
+
+      <input type="submit" value="Create Account" class="submit" />
+
+      <p>Already have an account ? <button class="text_bold">Login</button></p>
+
+      <p class="text_bold">Need help ?</p>
+    </form>
+  </body>
+</html>
