@@ -20,9 +20,12 @@
     <title>Login-Register</title>
 
     <!-- links de la fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       html {
@@ -35,9 +38,42 @@
   </head>
 
   <body>
-    <div class="cards card1">
+    <form class="cards card1">
+      <h2 class="title">Signup</h2>
+      <hr class="border_button_color_title title_button_card2" />
+
+      <label>
+        <div class="submit_title">Username</div>
+        <input type="text" />
+      </label>
+
+      <label>
+        <div class="submit_title">Email id</div>
+        <input type="email" />
+      </label>
+
+      <label>
+        <div class="submit_title">Create password</div>
+        <input type="password" />
+      </label>
+
+      <p class="card2_paragraph button">
+        By creating an account, I agree to
+        <span class="text_bold button">Terms and Conditions</span>
+      </p>
+
+      <input type="submit" value="Create Account" class="submit" />
+
+      <p class="account">
+        Already have an account ? <button class="text_bold button">Login</button>
+      </p>
+
+      <p class="text_bold button">Need help ?</p>
+    </form>
+
+    <form class="cards card2">
       <h2 class="title">Login</h2>
-      <hr class="border_button_color_title">
+      <hr class="border_button_color_title" />
 
       <label>
         <div class="submit_title">Username</div>
@@ -53,39 +89,11 @@
 
       <input type="submit" value="Login" class="submit" />
 
-      <p class="account">Don't have an account? <button class="text_bold button">Signup</button></p>
-
-      <p class="text_bold button">Need help?</p>
-    <div/>
-
-    <form class="cards card2">
-      <h2 class="title">Signup</h2>
-
-      <label>
-        Username
-        <input type="text" />
-      </label>
-
-      <label>
-        Email id
-        <input type="email" />
-      </label>
-
-      <label>
-        Create password
-        <input type="password" />
-      </label>
-
-      <p>
-        By creating an account, I agree to
-        <span class="text_bold">Terms and Conditions</span>
+      <p class="account">
+        Don't have an account? <button class="text_bold button">Signup</button>
       </p>
 
-      <input type="submit" value="Create Account" class="submit" />
-
-      <p class="account">Already have an account ? <button class="text_bold">Login</button></p>
-
-      <p class="text_bold button">Need help ?</p>
+      <p class="text_bold button">Need help?</p>
     </form>
   </body>
 </html>
