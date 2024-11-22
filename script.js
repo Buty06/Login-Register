@@ -40,22 +40,22 @@ $signupButton.addEventListener("click", () => {
 });
 
 //?Logica para los inputs
-$input1.addEventListener("click", () => {
-  $inputName1.classList.toggle("submit_title");
-});
+const inputLabels = [
+  { input: $input1, label: $inputName1 },
+  { input: $input2, label: $inputName2 },
+  { input: $input3, label: $inputName3 },
+  { input: $input4, label: $inputName4 },
+  { input: $input5, label: $inputName5 },
+];
 
-$input2.addEventListener("click", () => {
-  $inputName2.classList.toggle("submit_title");
-});
+//* En vez de hacer toggle a la clase, mejor responde al evento
+//* de focus(entrada al elemento) y blur (salida)
+for (const { input, label } of inputLabels) {
+  input.addEventListener("focus", () => {
+    label.classList.add("submit_title");
+  });
 
-$input3.addEventListener("click", () => {
-  $inputName3.classList.toggle("submit_title");
-});
-
-$input4.addEventListener("click", () => {
-  $inputName4.classList.toggle("submit_title");
-});
-
-$input5.addEventListener("click", () => {
-  $inputName5.classList.toggle("submit_title");
-});
+  input.addEventListener("blur", () => {
+    label.classList.remove("submit_title");
+  });
+}
