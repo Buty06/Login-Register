@@ -38,31 +38,35 @@
   </head>
 
   <body>
-    <div class="cards card1 display2 display display3" id="card1">
+    <div class="cards card1 display2 display" id="card1">
       <h2 class="title">Signup</h2>
       <hr class="border_button_color_title title_button_card2" />
 
-      <label>
-        <div class="submit_title">Username</div>
-        <input type="text" />
-      </label>
+      <form>
+        <label>
+          <div class="input_name" id="input_name1">Username</div>
+          <input type="text" id="input1" />
+        </label>
 
-      <label>
-        <div class="submit_title">Email id</div>
-        <input type="email" />
-      </label>
+        <label>
+          <div class="input_name" id="input_name2">Email id</div>
+          <input type="email" id="input2" />
+        </label>
 
-      <label>
-        <div class="submit_title generate_password">Create password</div>
-        <input type="password" />
-      </label>
+        <label>
+          <div class="input_name generate_password" id="input_name3">
+            Create password
+          </div>
+          <input type="password" id="input3" />
+        </label>
 
-      <p class="card2_paragraph button">
-        By creating an account, I agree to
-        <span class="text_bold button">Terms and Conditions</span>
-      </p>
+        <p class="card2_paragraph button">
+          By creating an account, I agree to
+          <span class="text_bold button">Terms and Conditions</span>
+        </p>
 
-      <input type="submit" value="Create Account" class="submit" />
+        <input type="submit" value="Create Account" class="submit" />
+      </form>
 
       <p class="account">
         Already have an account ?
@@ -76,19 +80,21 @@
       <h2 class="title">Login</h2>
       <hr class="border_button_color_title" />
 
-      <label>
-        <div class="submit_title">Username</div>
-        <input type="text" />
-      </label>
+      <form>
+        <label>
+          <div class="input_name" id="input_name4">Username</div>
+          <input type="text" id="input4" />
+        </label>
 
-      <label>
-        <div class="submit_title">Password</div>
-        <input type="password" />
-      </label>
+        <label>
+          <div class="input_name" id="input_name5">Password</div>
+          <input type="password" id="input5" />
+        </label>
 
-      <p class="text_bold aside button">Forgot password</p>
+        <p class="text_bold aside button">Forgot password</p>
 
-      <input type="submit" value="Login" class="submit" />
+        <input type="submit" value="Login" class="submit" />
+      </form>
 
       <p class="account">
         Don't have an account?

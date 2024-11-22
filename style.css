@@ -45,8 +45,13 @@ body {
   box-shadow: 5px 5px 10px rgba(34, 34, 34, 0.637);
 }
 
-.card1{
-    height: 35rem;
+.card1 {
+  height: 35rem;
+}
+
+form {
+  width: 100%;
+  overflow: visible;
 }
 
 .title {
@@ -58,16 +63,13 @@ body {
   height: 5px;
   width: 3rem;
   margin-right: 0.8rem;
-  background: linear-gradient(
-    to left,
-    rgb(54, 16, 78),
-    rgb(148, 36, 120) 50%
-  );
   margin-bottom: 2rem;
   border-radius: 10px;
+  animation: fluid 1s infinite;
+  animation-direction: alternate-reverse;
 }
 
-.title_button_card2{
+.title_button_card2 {
   margin-right: 1.5rem;
   width: 3.5rem;
 }
@@ -80,20 +82,24 @@ label {
   border-radius: 5px;
   border: 2px solid black;
   overflow: visible;
+  display: flex;
+  transition: 1s;
+}
+
+.input_name {
+  position: absolute;
+  align-self: center;
+  margin-left: 0.3rem;
+  font-size: 20px;
 }
 
 .submit_title {
   position: absolute;
-  font-weight: 700;
   top: -15px;
-  left: 10px;
+  left: 8px;
   background-color: rgb(240, 240, 240);
-  width: 6rem;
+  width: 7rem;
   text-align: center;
-}
-
-.generate_password{
-    width: 10rem;
 }
 
 input {
@@ -101,93 +107,84 @@ input {
   height: 100%;
   font-size: 20px;
   background-color: rgb(240, 240, 240);
-  transition: .3s ease-in-out;
-  padding: .5rem;
+  transition: 0.3s ease-in-out;
+  padding: 0.5rem;
 }
 
-.text_bold{
-    font-weight: 700;
-    color: rgb(102, 22, 148);
+.text_bold {
+  font-weight: 700;
+  color: rgb(102, 22, 148);
 }
 
-.submit{
-    width: 100%;
-    height: 3rem;
-    background: linear-gradient(
-        to left,
-        rgb(92, 9, 145),
-        rgb(207, 14, 159)
-      );
-    color: white;
-    font-weight: 700;
-    font-size: 25px;
-    border-radius: 30px;
-    box-shadow: 0px 5px 20px rgb(143, 19, 143);
-    margin-bottom: 2rem;
-    transition: .3s ease-in-out;
+.submit {
+  width: 100%;
+  height: 3rem;
+  background: linear-gradient(to left, rgb(92, 9, 145), rgb(207, 14, 159));
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 0px 5px 20px rgb(143, 19, 143);
+  margin-bottom: 2rem;
+  transition: 0.3s ease-in-out;
 
-    &:hover{
-        background: linear-gradient(
-        to left,
-        rgb(72, 8, 112),
-        rgb(136, 10, 104)
-      );
-    }
+  &:hover {
+    background: linear-gradient(to left, rgb(72, 8, 112), rgb(136, 10, 104));
+  }
 }
 
-.button{
-    font-size: 20px;
-    transition: .2s ease-in-out;
+.generate_password {
+  width: 12rem;
+}
+.button {
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
 
-    &:hover{
-        color: rgb(48, 12, 70);
-    }
+  &:hover {
+    color: rgb(48, 12, 70);
+  }
 }
 
-.aside{
-    align-self: flex-end;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 18px;
+.aside {
+  align-self: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 18px;
 }
 
-.card2_paragraph{
-    margin-bottom: 2rem;
-    font-size: 16px;
+.card2_paragraph {
+  margin-bottom: 2rem;
+  font-size: 16px;
 }
 
-.account{
-    margin-bottom: 1rem;
+.account {
+  margin-bottom: 1rem;
 }
 
 .display {
-    animation: change .5s;
+  animation: change 1s;
 }
 
-.display2{
-    display: none;
-}
-
-.display3{
-    animation: change2 .5s;
+.display2 {
+  display: none;
 }
 
 @keyframes change {
-    0%{
-        opacity: 1;
-    }
+  0% {
+    opacity: 1;
+  }
 
-    100%{
-        opacity: 0;
-    }
+  100% {
+    opacity: 0;
+  }
 }
 
-@keyframes change2 {
-    0%{
-        opacity: 0;
-    }
+@keyframes fluid {
+  0% {
+    background-color: rgb(96, 7, 151);
+  }
 
-    100%{
-        opacity: 1;
-    }
+  100% {
+    background-color: rgb(175, 10, 134);
+  }
 }
