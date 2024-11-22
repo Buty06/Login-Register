@@ -25,7 +25,7 @@ $loginButton.addEventListener("click", () => {
   setTimeout(() => {
     $signupCard.classList.toggle("display2");
     $loginCard.classList.toggle("display2");
-  }, 1000);
+  }, 700);
 });
 
 $signupButton.addEventListener("click", () => {
@@ -36,7 +36,7 @@ $signupButton.addEventListener("click", () => {
   setTimeout(() => {
     $signupCard.classList.toggle("display2");
     $loginCard.classList.toggle("display2");
-  }, 1000);
+  }, 700);
 });
 
 //?Logica para los inputs

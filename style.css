@@ -127,6 +127,7 @@ input {
   box-shadow: 0px 5px 20px rgb(143, 19, 143);
   margin-bottom: 2rem;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     background: linear-gradient(to left, rgb(72, 8, 112), rgb(136, 10, 104));
@@ -139,6 +140,7 @@ input {
 .button {
   font-size: 20px;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: rgb(48, 12, 70);
@@ -162,7 +164,7 @@ input {
 }
 
 .display {
-  animation: change 1s;
+  animation: change .7s;
 }
 
 .display2 {
