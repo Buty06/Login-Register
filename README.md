@@ -6,6 +6,6 @@ A login and registration practice page.
 
 As always direct link to the page:
 
-[Buty Falling Star](https://buty06.github.io/Login-Register/)
+[Buty Login-Register](https://buty06.github.io/Login-Register/)
 
 ## Thanks for watching

@@ -94,12 +94,12 @@ label {
 }
 
 .submit_title {
-  position: absolute;
-  top: -15px;
-  left: 8px;
+  transform: translate(0.1rem, -1.5rem);
   background-color: rgb(240, 240, 240);
-  width: 7rem;
+  width: 6rem;
   text-align: center;
+  transition: all .5s ease;
+  font-size: 18px;
 }
 
 input {
@@ -134,8 +134,12 @@ input {
   }
 }
 
+.generate_email{
+  width: 5rem;
+}
+
 .generate_password {
-  width: 12rem;
+  width: 10rem;
 }
 .button {
   font-size: 20px;
@@ -163,11 +167,15 @@ input {
   margin-bottom: 1rem;
 }
 
-.display {
-  animation: change .7s;
+.change_card_disappear {
+  animation: change .5s;
 }
 
-.display2 {
+.change_card_appear {
+  animation: change2 .5s;
+}
+
+.display_none{
   display: none;
 }
 
@@ -178,6 +186,16 @@ input {
 
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes change2 {
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
   }
 }
 

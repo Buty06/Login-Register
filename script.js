@@ -16,28 +16,22 @@ const $inputName3 = document.getElementById("input_name3");
 const $inputName4 = document.getElementById("input_name4");
 const $inputName5 = document.getElementById("input_name5");
 
+//?Funcion de cambio de cards
+const changeCard = () => {
+  $loginCard.classList.toggle("change_card_disappear");
+  $signupCard.classList.toggle("change_card_disappear");
+  $loginCard.classList.toggle("change_card_appear");
+  $signupCard.classList.toggle("change_card_appear");
+
+  setTimeout(() => {
+    $signupCard.classList.toggle("display_none");
+    $loginCard.classList.toggle("display_none");
+  }, 500);
+};
+
 //?Logica para el cambio de cartas
-$loginButton.addEventListener("click", () => {
-  $signupCard.classList.toggle("display");
-  $loginCard.classList.toggle("display");
-
-  // *cuando el contador llegue a 0 se pondra una clase que quitara una card y se le quitara la misma clase a la otra card
-  setTimeout(() => {
-    $signupCard.classList.toggle("display2");
-    $loginCard.classList.toggle("display2");
-  }, 700);
-});
-
-$signupButton.addEventListener("click", () => {
-  $signupCard.classList.toggle("display");
-  $loginCard.classList.toggle("display");
-
-  // *cuando el contador llegue a 0 se pondra una clase que quitara una card y se le quitara la misma clase a la otra card
-  setTimeout(() => {
-    $signupCard.classList.toggle("display2");
-    $loginCard.classList.toggle("display2");
-  }, 700);
-});
+$signupButton.addEventListener("click", changeCard);
+$loginButton.addEventListener("click", changeCard);
 
 //?Logica para los inputs
 const inputLabels = [
@@ -53,9 +47,5 @@ const inputLabels = [
 for (const { input, label } of inputLabels) {
   input.addEventListener("focus", () => {
     label.classList.add("submit_title");
-  });
-
-  input.addEventListener("blur", () => {
-    label.classList.remove("submit_title");
   });
 }
