@@ -48,4 +48,10 @@ for (const { input, label } of inputLabels) {
   input.addEventListener("focus", () => {
     label.classList.add("submit_title");
   });
+
+  input.addEventListener("blur", () => {
+    if (input.value === '') {
+      label.classList.remove("submit_title");  
+    }
+  });
 }
