@@ -91,6 +91,7 @@ label {
   align-self: center;
   margin-left: 0.3rem;
   font-size: 20px;
+  transition: all .5s ease;
 }
 
 .submit_title {
@@ -100,6 +101,7 @@ label {
   text-align: center;
   transition: all .5s ease;
   font-size: 18px;
+  font-weight: 700;
 }
 
 input {
